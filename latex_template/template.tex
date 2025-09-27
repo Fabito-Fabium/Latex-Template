@@ -3,9 +3,11 @@
 \input{preamble}
 \input{macros}
 \input{letterfonts}
+\input{ptbr_mod}
 
-\title{\Huge{Some Class}\\Random Examples}
-\author{\huge{Your Name}}
+
+\title{\Huge{Anotações}\\Exemplos Aleatórios}
+\author{\huge{Seu nome}}
 \date{}
 
 \begin{document}
@@ -18,11 +20,26 @@
 \pagebreak
 
 \chapter{}
-\section{Random Examples}
-\dfn{Limit of Sequence in $\bs{\bbR}$}{Let $\{s_n\}$ be a sequence in $\bbR$. We say $$\lim_{n\to\infty}s_n=s$$ where $s\in\bbR$ if $\forall$ real numbers $\eps>0$ $\exists$ natural number $N$ such that for $n>N$ $$s-\eps<s_n<s+\eps\text{ i.e. }|s-s_n|<\eps$$}
-\qs{}{Is the set ${x-}$axis${\setminus\{\text{Origin}\}}$ a closed set}
-\sol We have to take its complement and check whether that set is a open set i.e. if it is a union of open balls
-\nt{We will do topology in Normed Linear Space  (Mainly $\bbR^n$ and occasionally $\bbC^n$)using the language of Metric Space}
+\section{Alguns Exemplos Aleatórios}
+\indent
+Nessa seção, veremos como podemos utilizar esse template, que tem como base o repositório de 
+\href{https://github.com/SeniorMars/dotfiles}{SeniorMars}. 
+
+\dfn{Limite de Sequências em $\bs{\bbR}$}{Seja $\{s_n\}$ uma sequência em $\bbR$. Dizemos que 
+\begin{align*}
+  \lim_{n\to\infty}s_n=s \text{,}
+\end{align*}
+
+com $s\in\bbR$, quando para cada $\eps>0$, existe um natural $N$ tal que 
+dado um inteiro satisfazendo $n>N$, temos: $$s-\eps<s_n<s+\eps\quad\text{ i.e. }\quad |s-s_n|<\eps \text{.}$$}
+
+\qs{}{Mostre que a bola aberta é um aberto.}
+
+\sol Basta verificar que todo elemento da bola é um ponto interior dela.
+
+\nt{Fiquei com preguiça de reescrever todo o resto do texto... MAS, é possível verificar que toda chamada 
+de blocos está traduzido para o português (o que era o intuito do projeto).}
+
 \clm{Topology}{}{Topology is cool}
 \ex{Open Set and Close Set}{
 	\begin{tabular}{rl}
@@ -53,7 +70,7 @@
 \end{myproof}
 
 \cor{}{By the result of the proof, we can then show...}
-\mlenma{}{Suppose $\vec{v_1}, \dots, \vec{v_n} \in \RR[n]$ is subspace of $\RR^n$.}
+\mlemma{}{Suppose $\vec{v_1}, \dots, \vec{v_n} \in \RR[n]$ is subspace of $\bbR^n$.}
 \mprop{}{$1 + 1 = 2$.}
 
 \section{Random}
@@ -97,6 +114,9 @@ Now exercise
 
 \section{Algorithms}
 \begin{algorithm}[H]
+
+\SetAlgorithmName{Testando}\\
+
 \KwIn{This is some input}
 \KwOut{This is some output}
 \SetAlgoLined
